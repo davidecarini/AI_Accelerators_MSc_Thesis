@@ -7,7 +7,7 @@ Co-Advisor: Mattia Tibaldi
 
 <!-- DESCRIPTION -->
 ## Description
-In this repository there is all the material used in the master thesis and stored on the server in DEIB. For the synthetis and compilation of CNNs are used two frameworks: HLS4ML and vitis AI.
+In this repository there is all the material used in the master thesis and stored on the server in DEIB. For the synthesis and implementaion of CNNs on hardware are used two frameworks: HLS4ML and vitis AI.
 
 <!-- RELATIVE LINKS -->
 ## Links
