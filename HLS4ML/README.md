@@ -9,7 +9,7 @@ XRT (2020.1 or newer) <br />
 Python 3.7
 
 ## Run the Virtual Environment
-All the libraries are in the virtual environment
+All the libraries and the source of the SWs are in the virtual environment.
 ```
 ./script.sh
 ```
