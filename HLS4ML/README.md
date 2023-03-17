@@ -33,8 +33,8 @@ The tests are performed on a Alveo u280 board.
 
 |Model                |BRAM[Blocks]|DSP|FF[k]|LUT[k]|
 |---------------------|------------|---|-----|------|
-|Platform             |178         |4  |123.4|100.2 |
-|CNN  |42          |10 |28.7 |22.6  |
+|Platform             |202         |4  |148.5|102.0 |
+|CNN  |22          |1598 |113.0 |118.5  |
 
 ### NN performance
   
