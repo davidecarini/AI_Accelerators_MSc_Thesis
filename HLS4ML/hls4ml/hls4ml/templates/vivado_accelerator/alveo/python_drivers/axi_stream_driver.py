@@ -1,8 +1,11 @@
-from datetime import datetime
-
+import pynq
 import numpy as np
-from pynq import Overlay
+
 from pynq import allocate
+from pynq import Overlay
+
+from matplotlib import pyplot as plt
+from datetime import datetime
 
 
 class NeuralNetworkOverlay(Overlay):
@@ -34,10 +37,10 @@ class NeuralNetworkOverlay(Overlay):
                     encode_v = np.vectorize(encode) # to apply them element-wise
                     decode_v = np.vectorize(decode)
                   ```
-        trg_in  : input buffer target memory. By default the v++ command
-                  set it to HBM[0] for alveo-u50. 
-        trg_out : output buffer target memory.By default the v++ command
-                  set it to HBM[0] for alveo-u50.
+        trg_in  : input buffer target memory, alveo-u50 has 32 bank of HBM 256 MB each. By default the v++ command
+                  set it to HBM[0].
+        trg_out : output buffer target memory, alveo-u50 has 32 bank of HBM 256 MB each. By default the v++ command
+                  set it to HBM[0].
 
         Returns
         -------
@@ -66,6 +69,7 @@ class NeuralNetworkOverlay(Overlay):
         """
         if profile:
             timea = datetime.now()
+
         if encode is not None:
             X = encode(X)
         in_size  = np.prod(X.shape)
@@ -79,7 +83,7 @@ class NeuralNetworkOverlay(Overlay):
             print("Kernel call OK")
         output_buffer.sync_from_device()
         if debug:
-            print("Recieve OK")
+            print("Receive OK")
         result = output_buffer.copy()
         if profile:
             timeb = datetime.now()
@@ -88,7 +92,6 @@ class NeuralNetworkOverlay(Overlay):
             output_buffer.flush()
             del input_buffer
             del output_buffer
-            self.free()
             return result, dts, rate
         input_buffer.flush()
         output_buffer.flush()
@@ -106,4 +109,3 @@ class NeuralNetworkOverlay(Overlay):
         print("Classified {} samples in {} seconds ({} inferences / s)".format(N, dts, rate))
         print("Or {} us / inferences".format(1 / rate * 1e6))
         return dts, rate
-
