@@ -22,7 +22,13 @@ Colab: https://colab.research.google.com/drive/1pKZtZ9_iotdf0YHwzCta6M2bcLMQDrCG
 
 <!-- AUTHORS -->
 ## Authors
-
-Davide Carini
+<table style="margin-left: auto; margin-right: auto">
+<thead>
+<tr><th>NAME</th><th>EMAIL</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://github.com/davidecarini">Davide Carini<a/></td><td align="center">davide.carini@mail.polimi.it</td></tr>
+</tbody>
+</table>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
