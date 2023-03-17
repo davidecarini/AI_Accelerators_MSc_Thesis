@@ -20,8 +20,8 @@ Template PP Presentation Day: https://www.iotlab.polimi.it/for-students/material
 
 Colab: https://colab.research.google.com/drive/1pKZtZ9_iotdf0YHwzCta6M2bcLMQDrCG
 
-<!-- LICENSE -->
-## License
+<!-- AUTHORS -->
+## Authors
 
 Davide Carini
 
