@@ -33,4 +33,9 @@ In this repository there is all the material used in the master thesis and store
 </tbody>
 </table>
 
+
+## Contribute
+Contributions are always welcome!
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
