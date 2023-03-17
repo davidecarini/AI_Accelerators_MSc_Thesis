@@ -5,6 +5,7 @@ This is a repository for my master thesis on AI hardware accelerators.
 
 
 <!-- RELATIVE LINKS -->
+## Links
 
 Link Notes Tesi: https://www.overleaf.com/project/62c2e8c885cd95623a2ccd37 
 
