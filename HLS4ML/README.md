@@ -6,6 +6,14 @@ Here is presented an example of FPGA neural network inference deployed on alveo 
 Vivado and Vitis 2020.1 <br />
 Platform files for your board (2020.1 or older) <br />
 XRT (2020.1 or newer) <br />
+Python 3.7
+
+## Run the Virtual Environment
+All the libraries are in the virtual environment
+```
+./script.sh
+```
+
 
 ## General results
 
