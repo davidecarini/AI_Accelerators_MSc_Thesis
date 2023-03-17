@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+graft example-prjs
+graft example-models
+graft test
+recursive-include hls4ml/templates *
+include hls4ml/backends/vivado_accelerator/supported_boards.json
