@@ -49,6 +49,6 @@ Here are presented the prediction times for different devices (10000 samples dat
 
 |Device             |t<sub>img</sub><sup>CNN</sup>[&#956;s]|
 |-------------------|--------------------------------------|
-|CPU [AMD Ryzen 7 4800u]         |129                                                                   
+|CPU [AMD Ryzen 7 4800u]         |117                                                                   
 |CPU [AMD EPYC 7282]       |74.2                             |
 |ALVEO[u280]       |16.5                                     |
