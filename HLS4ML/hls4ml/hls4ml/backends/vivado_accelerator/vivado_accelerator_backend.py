@@ -45,7 +45,7 @@ class VivadoAcceleratorBackend(VivadoBackend):
         os.makedirs('xclbin_files', exist_ok=True)
         os.chdir(model.config.get_output_dir() + '/xclbin_files')
         # TODO Add other platforms
-        vitis_cmd = "v++ -t hw --platform " + platform + " --link ../xo_files/myproject_kernel.xo -o'myproject_kernel.xclbin' --user_ip_repo_paths " + ip_repo_path
+        vitis_cmd = "v++ -t hw --save-temps --platform " + platform + " --link ../xo_files/myproject_kernel.xo -o'myproject_kernel.xclbin' --user_ip_repo_paths " + ip_repo_path
         try:
             os.system(vitis_cmd)
         except:
