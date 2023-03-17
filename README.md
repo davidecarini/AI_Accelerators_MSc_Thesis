@@ -33,6 +33,9 @@ In this repository there is all the material used in the master thesis and store
 </tbody>
 </table>
 
+## Acknowledgments
+https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb \br  
+https://github.com/selwyn96/hls4ml
 
 ## Contribute
 Contributions are always welcome!
