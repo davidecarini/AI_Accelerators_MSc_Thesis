@@ -26,3 +26,4 @@ fi
 
 
 ${PY} test.py
+${PY} deploy_alveo.py
