@@ -13,13 +13,13 @@ Link Tesi: https://www.overleaf.com/project/638883ef1f6f113398139581
 
 Link Executive Summary: 
 
-Template PP presentazione tesi di laurea: https://www.iotlab.polimi.it/for-students/material/
+Template PP Presentation Day: https://www.iotlab.polimi.it/for-students/material/
 
 Colab: https://colab.research.google.com/drive/1pKZtZ9_iotdf0YHwzCta6M2bcLMQDrCG
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Davide Carini
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
