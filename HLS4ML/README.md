@@ -27,7 +27,7 @@ The tests are performed on a Alveo u280 board.
 |Model                |BRAM[Blocks]|DSP|FF[k]|LUT[k]|
 |---------------------|------------|---|-----|------|
 |Platform             |/           |/  |/    |/     |
-|CNN  |365         |10 |68.8 |129.0 |
+|CNN  |734         |1598 |121.1 |152.5 |
  
 ### Post-implementation resource utilization [MNIST classification]
 
