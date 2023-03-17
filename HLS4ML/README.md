@@ -1,6 +1,7 @@
 # ALVEO_ML
 
 Here is presented an example of FPGA neural network inference deployed on alveo u280 board with Vivado 2020.1. The NN used is a simple CNN: 
+
 ![CNN](https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/blob/main/images/Keras_model.png)
 ## Software Requirements
 Vivado and Vitis 2020.1 <br />
