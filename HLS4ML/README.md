@@ -40,15 +40,15 @@ The tests are performed on a Alveo u280 board.
   
 |MODEL              |Accuracy [\%]|Rate[Images\s]|t<sub>img</sub>[&#956;s]|
 |-------------------|-------------|--------------|------------------------|
-|CNN                |97.11        |52600         |19                      |
+|CNN                |97.66        |60519.5         |          16.5            |
 
   
 ### Comparisons
   
 Here are presented the prediction times for different devices (10000 samples dataset).
 
-|Device             |t<sub>img</sub><sup>CNN</sup>[&#956;s]|t<sub>img</sub><sup>DNN</sup>[&#956;s]|
-|-------------------|--------------------------------------|--------------------------------------|
-|CPU [AMD Ryzen 7 4800u]         |95                                    |24                                    |
-|CPU [AMD EPYC 7282]       |30                                    |22                                    |
-|ALVEO[u280]       |87                                    |85                                    |
+|Device             |t<sub>img</sub><sup>CNN</sup>[&#956;s]|
+|-------------------|--------------------------------------|
+|CPU [AMD Ryzen 7 4800u]         |95                                                                    
+|CPU [AMD EPYC 7282]       |30                             |
+|ALVEO[u280]       |16.5                                     |
