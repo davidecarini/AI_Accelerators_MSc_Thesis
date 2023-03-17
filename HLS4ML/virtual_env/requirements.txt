@@ -1,0 +1,8 @@
+pynq==2.5.4
+tensorflow==2.9.0
+keras==2.9.0
+git+https://github.com/selwyn96/hls4ml.git@alveo_dev#egg=hls4ml[profiling]
+tensorflow_model_optimization==0.7.3
+numpy==1.21.6
+matplotlib==3.5.3
+pydot==1.4.2
