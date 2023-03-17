@@ -1,11 +1,11 @@
 # ALVEO_ML
 
-Here is presented an example of FPGA neural network inference deployed on alveo u50 board with Vivado 2020.1 .  
+Here is presented an example of FPGA neural network inference deployed on alveo u280 board with Vivado 2020.1 .  
 
 
 ## General results
 
-The tests are performed on a Alveo u50 board.  
+The tests are performed on a Alveo u280 board.  
  
 ### Vivado HLS resource utilization [MNIST classification]
 
