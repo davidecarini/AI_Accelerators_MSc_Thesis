@@ -11,6 +11,14 @@ Co-Advisor: Mattia Tibaldi
 
 <!-- RELATIVE LINKS -->
 ## Links
+<table style="margin-left: auto; margin-right: auto">
+<thead>
+<tr><th>DESCRIPTION</th><th>LINK</th></tr>
+</thead>
+<tbody>
+<tr><td></td><td align="center">Notes</td><td> https://www.overleaf.com/project/62c2e8c885cd95623a2ccd37 </td></tr>
+</tbody>
+</table>
 
 Link Notes Tesi: https://www.overleaf.com/project/62c2e8c885cd95623a2ccd37 
 
