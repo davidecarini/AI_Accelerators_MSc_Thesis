@@ -1,5 +1,8 @@
 # AI_Accelerators_MSc_Thesis
-This is a repository for my master thesis on AI hardware accelerators.
+This is a repository for my master thesis on AI hardware accelerators developed at Politecnico di Milano.
+
+Advisor: Christian Pilato
+Co-Advisor: Mattia Tibaldi
 
 
 
