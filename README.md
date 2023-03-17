@@ -7,7 +7,7 @@ Co-Advisor: Mattia Tibaldi
 
 <!-- DESCRIPTION -->
 ## Description
-
+In this repository there is all the material used in the master thesis and stored on the server in DEIB. 
 
 <!-- RELATIVE LINKS -->
 ## Links
