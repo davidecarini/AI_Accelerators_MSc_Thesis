@@ -41,7 +41,7 @@ _________________________________________________________________
 <!-- COMPARISON -->
 ## Comparison between CNN on HLS4ML and Vitis-AI
 
-|TOOL              |Total images [Images] |Accuracy [\%]|Throughput[Images\s]|t<sub>img</sub>[&#956;s]|
+|TOOL              |Total images [Images] |Test Accuracy [\%]|Throughput[Images\s]|t<sub>img</sub>[&#956;s]|
 |------------------|----------------------|-------------|--------------|------------------------|
 |HLS4ML          | 10000     |97.66        |60519.5         |          251.92            |
 |Vitis-AI        | 10000      |  98.07     |3969.52         |          16.5            |
