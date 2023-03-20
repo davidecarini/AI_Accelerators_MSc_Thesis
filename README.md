@@ -95,5 +95,5 @@ For the development of this thesis I relied on these very useful repositories:
 
 
 ## Contribute
-Contributions are always welcome!
+Contributions and discovery of any bug are always welcome!
 
