@@ -33,7 +33,7 @@ Python 3.7
 ## Run the Virtual Environment
 All the libraries and the source of the SWs are in the virtual environment.
 ```
-./script.sh
+[carini@localhost test]$  ./script.sh
 
 
 Epoch 1/15
