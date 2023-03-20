@@ -16,7 +16,8 @@ With hls4ml, the xclbin is generated each time starting from the model that is g
 <!-- MODEL --> 
 ## Neural Network
 The neural network used in the thesis has the following structure: 
-<img src="https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/tree/main/images" alt="CNN model" style="float: left; margin-right: 10px;" />
+
+<img src="https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/blob/main/images/Keras_model.png" alt="CNN model" style="float: left; margin-right: 10px;" />
 
 
 
