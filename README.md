@@ -67,7 +67,7 @@ _________________________________________________________________
 
 
 <!-- AUTHORS -->
-## Authors
+## Author
 <table style="margin-left: auto; margin-right: auto">
 <thead>
 <tr><th>NAME</th><th>EMAIL</th><th>PERSON CODE</th><th>STUDENT ID</th></tr>
