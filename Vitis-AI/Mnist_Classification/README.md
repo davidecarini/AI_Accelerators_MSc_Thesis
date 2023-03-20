@@ -320,5 +320,4 @@ Starting 1 threads...
 Throughput=3969.52 fps, total frames = 10000, time=2.5192 seconds
 Correct:9807, Wrong:193, Accuracy:0.9807
 
-
 ```
