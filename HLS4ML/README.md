@@ -34,6 +34,44 @@ Python 3.7
 All the libraries and the source of the SWs are in the virtual environment.
 ```
 ./script.sh
+
+
+Epoch 1/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.4896 - accuracy: 0.8674 - val_loss: 0.2208 - val_accuracy: 0.9388
+Epoch 2/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.2337 - accuracy: 0.9317 - val_loss: 0.1744 - val_accuracy: 0.9515
+Epoch 3/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.1720 - accuracy: 0.9511 - val_loss: 0.1263 - val_accuracy: 0.9657
+Epoch 4/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.1356 - accuracy: 0.9617 - val_loss: 0.1042 - val_accuracy: 0.9717
+Epoch 5/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.1109 - accuracy: 0.9691 - val_loss: 0.0931 - val_accuracy: 0.9743
+Epoch 6/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0951 - accuracy: 0.9734 - val_loss: 0.0861 - val_accuracy: 0.9773
+Epoch 7/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0831 - accuracy: 0.9764 - val_loss: 0.0753 - val_accuracy: 0.9812
+Epoch 8/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0741 - accuracy: 0.9793 - val_loss: 0.0721 - val_accuracy: 0.9800
+Epoch 9/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0687 - accuracy: 0.9797 - val_loss: 0.0693 - val_accuracy: 0.9823
+Epoch 10/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0626 - accuracy: 0.9818 - val_loss: 0.0625 - val_accuracy: 0.9838
+Epoch 11/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0577 - accuracy: 0.9837 - val_loss: 0.0671 - val_accuracy: 0.9830
+Epoch 12/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0545 - accuracy: 0.9841 - val_loss: 0.0635 - val_accuracy: 0.9840
+Epoch 13/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0512 - accuracy: 0.9853 - val_loss: 0.0595 - val_accuracy: 0.9838
+Epoch 14/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0483 - accuracy: 0.9859 - val_loss: 0.0598 - val_accuracy: 0.9843
+Epoch 15/15
+422/422 [==============================] - 3s 7ms/step - loss: 0.0460 - accuracy: 0.9860 - val_loss: 0.0598 - val_accuracy: 0.9840
+
+
+Size of the Keras model: 0.233736 MB
+313/313 [==============================] - 1s 2ms/step
+Keras test Accuracy: 0.9805
+
 ```
 
 
