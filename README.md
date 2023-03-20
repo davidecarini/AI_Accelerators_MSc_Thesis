@@ -46,7 +46,7 @@ Keras test Accuracy: 98,05 %
 
 
 <!-- COMPARISON -->
-## Comparison between CNN on HLS4ML and Vitis-AI
+## Comparison between CNN on HLS4ML and Vitis-AI [deployed on ALveo U280]
 
 |TOOL              |Total images [Images] |Test Accuracy [\%]|Throughput[Images\s]|t<sub>img</sub>[&#956;s]|
 |------------------|----------------------|-------------|--------------|------------------------|
