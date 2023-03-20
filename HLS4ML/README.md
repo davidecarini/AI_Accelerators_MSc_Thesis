@@ -1,10 +1,29 @@
 # DEPLOY OF CNN ON ALVEO U280
 
-Here is presented an example of FPGA neural network inference deployed on alveo u280 board with Vivado 2020.1. The NN used is a simple CNN: 
+Here is presented an example of FPGA neural network inference deployed on alveo u280 board with Vivado 2020.1. The Dataset used for classification is the MNIST dataset. The NN used is a simple CNN: 
+```
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ convolution_layer_1 (Conv2D  (None, 26, 26, 12)       120       
+ )                                                               
+                                                                 
+ max_pooling_layer_1 (MaxPoo  (None, 13, 13, 12)       0         
+ ling2D)                                                         
+                                                                 
+ flatten_layer (Flatten)     (None, 2028)              0         
+                                                                 
+ dense_layer (Dense)         (None, 10)                20290     
+                                                                 
+ softmax (Activation)        (None, 10)                0         
+                                                                 
+=================================================================
+Total params: 20,410
+Trainable params: 20,410
+Non-trainable params: 0
+```
 
-![CNN](https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/blob/main/images/Keras_model.png)
-
-The Dataset used for classification is the MNIST dataset.
 ## Software Requirements
 Vivado and Vitis 2020.1 <br />
 Platform files for your board (2020.1 or older) <br />
