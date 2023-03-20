@@ -57,7 +57,8 @@ Vitis-AI /workspace/test/src > source setenv.sh
 ### Build and train model
 
 ```
-(vitis-ai-tensorflow2) Vitis-AI /workspace/myproj/tf2-mnist-end-to-end > python train.py 
+(vitis-ai-tensorflow2) Vitis-AI /workspace/test/src > python train.py 
+
 
 Load Mnist dataset..
 
@@ -68,75 +69,102 @@ Layer (type)                 Output Shape              Param #
 =================================================================
 input_1 (InputLayer)         [(None, 28, 28, 1)]       0         
 _________________________________________________________________
-conv2d (Conv2D)              (None, 26, 26, 32)        320       
+conv2d (Conv2D)              (None, 26, 26, 12)        120       
 _________________________________________________________________
-max_pooling2d (MaxPooling2D) (None, 13, 13, 32)        0         
+max_pooling2d (MaxPooling2D) (None, 13, 13, 12)        0         
 _________________________________________________________________
-conv2d_1 (Conv2D)            (None, 11, 11, 64)        18496     
+flatten (Flatten)            (None, 2028)              0         
 _________________________________________________________________
-max_pooling2d_1 (MaxPooling2 (None, 5, 5, 64)          0         
-_________________________________________________________________
-conv2d_2 (Conv2D)            (None, 3, 3, 64)          36928     
-_________________________________________________________________
-flatten (Flatten)            (None, 576)               0         
-_________________________________________________________________
-dense (Dense)                (None, 64)                36928     
-_________________________________________________________________
-dense_1 (Dense)              (None, 10)                650       
+dense (Dense)                (None, 10)                20290     
 =================================================================
-Total params: 93,322
-Trainable params: 93,322
+Total params: 20,410
+Trainable params: 20,410
 Non-trainable params: 0
 _________________________________________________________________
 
 Fit on dataset..
 Epoch 1/10
-782/782 [==============================] - 13s 16ms/step - loss: 0.1843 - accuracy: 0.9427 - val_loss: 0.0701 - val_accuracy: 0.9813
+
+
+782/782 [==============================] - 5s 6ms/step - loss: 0.3861 - accuracy: 0.8958 - val_loss: 0.1821 - val_accuracy: 0.9507
 Epoch 2/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0529 - accuracy: 0.9835 - val_loss: 0.0543 - val_accuracy: 0.9855
+
+
+782/782 [==============================] - 4s 5ms/step - loss: 0.1665 - accuracy: 0.9532 - val_loss: 0.1265 - val_accuracy: 0.9659
 Epoch 3/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0346 - accuracy: 0.9894 - val_loss: 0.0472 - val_accuracy: 0.9877
+
+782/782 [==============================] - 4s 5ms/step - loss: 0.1217 - accuracy: 0.9651 - val_loss: 0.1020 - val_accuracy: 0.9731
 Epoch 4/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0252 - accuracy: 0.9929 - val_loss: 0.0463 - val_accuracy: 0.9878
+
+782/782 [==============================] - 5s 6ms/step - loss: 0.0982 - accuracy: 0.9718 - val_loss: 0.0893 - val_accuracy: 0.9758
 Epoch 5/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0188 - accuracy: 0.9945 - val_loss: 0.0494 - val_accuracy: 0.9896
+
+782/782 [==============================] - 4s 5ms/step - loss: 0.0834 - accuracy: 0.9758 - val_loss: 0.0819 - val_accuracy: 0.9765
 Epoch 6/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0147 - accuracy: 0.9956 - val_loss: 0.0513 - val_accuracy: 0.9901
+
+782/782 [==============================] - 4s 6ms/step - loss: 0.0734 - accuracy: 0.9789 - val_loss: 0.0772 - val_accuracy: 0.9775
 Epoch 7/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0121 - accuracy: 0.9966 - val_loss: 0.0452 - val_accuracy: 0.9920
+
+782/782 [==============================] - 4s 6ms/step - loss: 0.0660 - accuracy: 0.9807 - val_loss: 0.0743 - val_accuracy: 0.9782
 Epoch 8/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0096 - accuracy: 0.9973 - val_loss: 0.0542 - val_accuracy: 0.9906
+
+782/782 [==============================] - 5s 6ms/step - loss: 0.0603 - accuracy: 0.9823 - val_loss: 0.0725 - val_accuracy: 0.9785
 Epoch 9/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0088 - accuracy: 0.9976 - val_loss: 0.0640 - val_accuracy: 0.9893
+
+782/782 [==============================] - 4s 5ms/step - loss: 0.0555 - accuracy: 0.9837 - val_loss: 0.0712 - val_accuracy: 0.9789
 Epoch 10/10
-782/782 [==============================] - 5s 7ms/step - loss: 0.0073 - accuracy: 0.9978 - val_loss: 0.0709 - val_accuracy: 0.9893
+
+782/782 [==============================] - 4s 6ms/step - loss: 0.0515 - accuracy: 0.9851 - val_loss: 0.0704 - val_accuracy: 0.9795
 
 Save trained model to./models/float_model.h5.
 
 Evaluate model on test dataset..
-157/157 [==============================] - 1s 3ms/step - loss: 0.0426 - accuracy: 0.9911
-loss: 0.043
-acc: 0.991
+
+  1/157 [..............................] - ETA: 0s - loss: 0.0735 - accuracy: 0.9688
+ 22/157 [===>..........................] - ETA: 0s - loss: 0.0806 - accuracy: 0.9716
+ 44/157 [=======>......................] - ETA: 0s - loss: 0.0869 - accuracy: 0.9712
+ 67/157 [===========>..................] - ETA: 0s - loss: 0.0873 - accuracy: 0.9706
+ 89/157 [================>.............] - ETA: 0s - loss: 0.0764 - accuracy: 0.9742
+111/157 [====================>.........] - ETA: 0s - loss: 0.0714 - accuracy: 0.9762
+132/157 [========================>.....] - ETA: 0s - loss: 0.0642 - accuracy: 0.9788
+153/157 [============================>.] - ETA: 0s - loss: 0.0613 - accuracy: 0.9803
+157/157 [==============================] - 0s 2ms/step - loss: 0.0617 - accuracy: 0.9801
+loss: 0.062
+acc: 0.980
 ```
 
 ### Quantize the floating-point model
 
 ```
-(vitis-ai-tensorflow2) Vitis-AI /workspace/myproj/tf2-mnist-end-to-end > python quantize.py 
+(vitis-ai-tensorflow2) Vitis-AI /workspace/test/src > python quantize.py 
 Load float model..
 
 Load Mnist dataset..
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+
+    8192/11490434 [..............................] - ETA: 0s
+ 5013504/11490434 [============>.................] - ETA: 0s
+10870784/11490434 [===========================>..] - ETA: 0s
+11493376/11490434 [==============================] - 0s 0us/step
 
 Run quantization..
-[INFO] Start CrossLayerEqualization...
-10/10 [==============================] - 0s 32ms/step
-[INFO] CrossLayerEqualization Done.
-[INFO] Start Quantize Calibration...
-157/157 [==============================] - 12s 77ms/step
-[INFO] Quantize Calibration Done.
-[INFO] Start Generating Quantized Model...
-[Warning] Skip quantize pos adjustment for layer quant_dense, its quantize pos is [i=None, w=8.0, b=9.0, o=3.0]
-[INFO] Generating Quantized Model Done.
+[VAI INFO] Start CrossLayerEqualization...
+
+ 1/10 [==>...........................] - ETA: 0s
+ 3/10 [========>.....................] - ETA: 0s
+ 5/10 [==============>...............] - ETA: 0s
+ 7/10 [====================>.........] - ETA: 0s
+ 9/10 [==========================>...] - ETA: 0s
+10/10 [==============================] - 0s 26ms/step
+[VAI INFO] CrossLayerEqualization Done.
+[VAI INFO] Start Quantize Calibration...
+
+
+157/157 [==============================] - 2s 13ms/step
+[VAI INFO] Quantize Calibration Done.
+[VAI INFO] Start Post-Quantize Adjustment...
+[VAI INFO] Post-Quantize Adjustment Done.
+[VAI INFO] Quantization Finished.
 
 Saved quantized model as ./models/quantized_model.h5
 ```
@@ -146,17 +174,36 @@ Saved quantized model as ./models/quantized_model.h5
 ```
 (vitis-ai-tensorflow2) Vitis-AI /workspace/myproj/tf2-mnist-end-to-end > python eval_quantized.py 
 
-Load quantized model..
-WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+Load float model..
 
 Load Mnist dataset..
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
 
-Compile model..
+    8192/11490434 [..............................] - ETA: 0s
+ 5013504/11490434 [============>.................] - ETA: 0s
+10870784/11490434 [===========================>..] - ETA: 0s
+11493376/11490434 [==============================] - 0s 0us/step
 
-Evaluate model on test Dataset
-157/157 [==============================] - 4s 22ms/step - loss: 0.0417 - accuracy: 0.9913
-loss: 0.042
-acc: 0.991
+Run quantization..
+[VAI INFO] Start CrossLayerEqualization...
+
+ 1/10 [==>...........................] - ETA: 0s
+ 3/10 [========>.....................] - ETA: 0s
+ 5/10 [==============>...............] - ETA: 0s
+ 7/10 [====================>.........] - ETA: 0s
+ 9/10 [==========================>...] - ETA: 0s
+10/10 [==============================] - 0s 26ms/step
+[VAI INFO] CrossLayerEqualization Done.
+[VAI INFO] Start Quantize Calibration...
+
+
+157/157 [==============================] - 2s 13ms/step
+[VAI INFO] Quantize Calibration Done.
+[VAI INFO] Start Post-Quantize Adjustment...
+[VAI INFO] Post-Quantize Adjustment Done.
+[VAI INFO] Quantization Finished.
+
+Saved quantized model as ./models/quantized_model.h5
 ```
 ### Finetuning
 Here we just run finetuning once for demonstration. For further compiling we just used quantized_model.h5 generated before.
