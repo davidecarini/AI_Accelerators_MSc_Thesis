@@ -155,6 +155,9 @@ acc: 0.981
 
 
 ```
+### Finetuning
+
+```
 (vitis-ai-tensorflow2) Vitis-AI /workspace/test/src > python finetune.py 
 Load Mnist dataset..
 
