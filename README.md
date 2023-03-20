@@ -10,7 +10,7 @@ This is a repository for my master thesis on AI hardware accelerators developed 
 ## Description
 In this repository there is the material used in the master thesis and stored on the server in DEIB. For the synthesis and implementation of CNNs on hardware are used two frameworks: HLS4ML and vitis-AI. In the thesis there is a focus on the comparison between the two tools trying to figure out which one is better to use in different possible scenarios. 
 With hls4ml, the xclbin is generated each time starting from the model that is given to it as input. Usually the generation of this bitstream takes about 3 hours. While in Vitis-AI an already existing bitstream is used and the model is compiled as if it were micro-code. 
-For more details on how the tools work, go to the relative folders ([a link](https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/tree/main/HLS4ML ,[a link](https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/tree/main/Vitis-AI)) .
+For more details on how the tools work, go to the relative folders (<a href="https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/tree/main/HLS4ML">HLS4ML</a>, <a href="https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/tree/main/Vitis-AI">Vitis-AI</a>) .
 
 The dataset used for training and evaluation of the neural network is the MNIST (https://en.wikipedia.org/wiki/MNIST_database). 
 
