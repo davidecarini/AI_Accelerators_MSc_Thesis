@@ -40,6 +40,7 @@ In this repository there is all the material used in the master thesis and store
 </thead>
 <tbody>
 <tr><td>HLS4ML</td><td align="center"></td><td>10568649</td><td>976571</td></tr>
+<tr><td>Vitis-AI</td><td align="center"></td><td>10568649</td><td>976571</td></tr>
 </tbody>
 </table>
 
