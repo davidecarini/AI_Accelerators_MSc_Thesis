@@ -37,14 +37,16 @@ In this repository there is all the material used in the master thesis and store
 
 |TOOL              |total iamges [Images] |Accuracy [\%]|Throughput[Images\s]|t<sub>img</sub>[&#956;s]|
 |------------------|----------------------|-------------|--------------|------------------------|
-|HLS4ML          | 10000     |97.66        |60519.5         |          2.5192            |
-|Vitis-AI        | 10000      |  98.07     |3969.52         |          0.165            |
+|HLS4ML          | 10000     |97.66        |60519.5         |          251.92            |
+|Vitis-AI        | 10000      |  98.07     |3969.52         |          16.5            |
 
 
 ## Acknowledgments
 https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb  
 
 https://github.com/selwyn96/hls4ml
+
+https://github.com/lobster1989/Mnist-classification-Vitis-AI-1.3-TensorFlow2
 
 ## Contribute
 Contributions are always welcome!
