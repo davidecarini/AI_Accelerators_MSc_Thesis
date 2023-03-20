@@ -49,11 +49,10 @@ With hls4ml, the xclbin is generated each time starting from the model that is g
 
 
 ## Acknowledgments
-https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb  
 
-https://github.com/selwyn96/hls4ml
-
-https://github.com/lobster1989/Mnist-classification-Vitis-AI-1.3-TensorFlow2
+* https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb  
+* https://github.com/selwyn96/hls4ml
+* https://github.com/lobster1989/Mnist-classification-Vitis-AI-1.3-TensorFlow2
 
 ## Contribute
 Contributions are always welcome!
