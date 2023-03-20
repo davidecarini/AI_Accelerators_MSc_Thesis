@@ -20,8 +20,7 @@ The dataset used for training and evaluation of the neural network is the MNIST 
 ## Neural Network
 The neural network used in the thesis is a Convolutional Neural Network and it has the following structure: 
 ```
-Create custom cnn..
-Model: "mnist_customcnn_model"
+Model: "mnist_cnn_model"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -39,6 +38,9 @@ Total params: 20,410
 Trainable params: 20,410
 Non-trainable params: 0
 _________________________________________________________________
+
+Size of the Keras model: 0.233736 MB
+Keras test Accuracy: 0.9805
 ```
 
 <!-- COMPARISON -->
