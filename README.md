@@ -1,10 +1,10 @@
 # AI_Accelerators_MSc_Thesis
-This is a repository for my master thesis on AI hardware accelerators developed at Politecnico di Milano.
+This is a repository for my master thesis on AI hardware accelerators developed at Politecnico di Milano. 
 
-Advisor: Christian Pilato , 
-Co-Advisor: Mattia Tibaldi
-
-
+ * **Advisor**: Prof. Christian Pilato
+ * **Co-Advisor**: Ing. Mattia Tibaldi
+ 
+ 
 <!-- DESCRIPTION -->
 ## Description
 In this repository there is all the material used in the master thesis and stored on the server in DEIB. For the synthesis and implementaion of CNNs on hardware are used two frameworks: HLS4ML and vitis AI.
