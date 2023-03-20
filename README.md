@@ -33,17 +33,12 @@ In this repository there is all the material used in the master thesis and store
 </tbody>
 </table>
 
-## Comparison between CNN on HLS4ML and Vitis-ai
-<table style="margin-left: auto; margin-right: auto">
-<thead>
-<tr><th>TOOL</th><th>ACCURACY</th><th>PERSON CODE</th><th>STUDENT ID</th></tr>
-</thead>
-<tbody>
-<tr><td>HLS4ML</td><td align="center"></td><td>10568649</td><td>976571</td></tr>
-<tr><td>Vitis-AI</td><td align="center"></td><td>10568649</td><td>976571</td></tr>
-</tbody>
-</table>
+## Comparison between CNN on HLS4ML and Vitis-AI
 
+|TOOL              |Accuracy [\%]|Rate[Images\s]|t<sub>img</sub>[&#956;s]|
+|-------------------|-------------|--------------|------------------------|
+|HLS4ML                |97.66        |60519.5         |          16.5            |
+|Vitis-AI                |       |60519.5         |          16.5            |
 
 ## Acknowledgments
 https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb  
