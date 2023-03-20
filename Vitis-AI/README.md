@@ -15,7 +15,7 @@ We will run the following steps:
 * Evaluation of the quantized model.
 * Apply finetuning to the trained model with a calibration dataset.
 * Compilation of both the quantized & finetuned model to create the .xmodel files ready for execution on the DPU accelerator IP.
-* Download and run the application on the ZCU10X evaluation board.
+* Download and run the application on the U280 evaluation board.
 
 ## Python scripts
 *load_data.py*: 
@@ -37,11 +37,11 @@ Evaluate the quantized model.
 Model finetuning.
 
 ## Shell scripts
-*compile_zcu10x.sh*: 
-Launches the vai_c_tensorflow2 command to compile the quantized or finetuned model into an .xmodel file for the ZCU10x evaluation board
+*compile_u280.sh*: 
+Launches the vai_c_tensorflow2 command to compile the quantized or finetuned model into an .xmodel file for the U280 evaluation board
 
-*make_target_zcu10x.sh*: 
-Copies the .xmodel and images to the ./target_zcu10x folder ready to be copied to the ZCU10x evaluation board's SD card.
+*make_target_u280.sh*: 
+Copies the .xmodel and images to the ./target_u280 folder ready to be copied to the U280 evaluation board's SD card.
 
 ## Implement
 Before running this part, we should setup Vitis-AI docker and activate vitis-ai-tensorflow2 anaconda environment.
