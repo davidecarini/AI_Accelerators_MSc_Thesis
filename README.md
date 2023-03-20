@@ -39,9 +39,11 @@ Trainable params: 20,410
 Non-trainable params: 0
 _________________________________________________________________
 
+Training time: 43,2 seconds
 Size of the Keras model: 0.233736 MB
-Keras test Accuracy: 0.9805
+Keras test Accuracy: 98,05 %
 ```
+
 
 <!-- COMPARISON -->
 ## Comparison between CNN on HLS4ML and Vitis-AI
