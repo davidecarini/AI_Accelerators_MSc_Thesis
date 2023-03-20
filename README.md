@@ -16,7 +16,7 @@ With hls4ml, the xclbin is generated each time starting from the model that is g
 <!-- MODEL --> 
 ## Neural Network
 The neural network used in the thesis has the following structure: 
-
+```
 Create custom cnn..
 Model: "mnist_customcnn_model"
 _________________________________________________________________
@@ -36,7 +36,7 @@ Total params: 20,410
 Trainable params: 20,410
 Non-trainable params: 0
 _________________________________________________________________
-
+```
 
 <!-- COMPARISON -->
 ## Comparison between CNN on HLS4ML and Vitis-AI
