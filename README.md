@@ -1,15 +1,18 @@
 # AI_Accelerators_MSc_Thesis
-This is a repository for my master thesis on AI hardware accelerators developed at Politecnico di Milano. 
+This is a repository for my master thesis on AI hardware accelerators developed @ Politecnico di Milano.
 
  * **Advisor**: Prof. Christian Pilato
  * **Co-Advisor**: Ing. Mattia Tibaldi
  
  
+ 
 <!-- DESCRIPTION -->
 ## Description
-In this repository there is all the material used in the master thesis and stored on the server in DEIB. For the synthesis and implementaion of CNNs on hardware are used two frameworks: HLS4ML and vitis AI.
+In this repository there is the material used in the master thesis and stored on the server in DEIB. For the synthesis and implementation of CNNs on hardware are used two frameworks: HLS4ML and vitis AI. In the thesis there is a focus on the comparison between the two tools trying to figure out which one is better to use in different possible scenarios. 
+With hls4ml, the xclbin is generated each time starting from the model that is given to it as input. Usually the generation of this bitstream takes about 3 hours. While in Vitis-AI an already existing bitstream is used and the model is compiled as if it were micro-code.
 
-<!-- RELATIVE LINKS -->
+
+<!-- LINKS -->
 ## Links
 <table style="margin-left: auto; margin-right: auto">
 <thead>
@@ -19,8 +22,12 @@ In this repository there is all the material used in the master thesis and store
 <tr><td align="center">Meeting Notes</td><td> https://www.notion.so/030e0768ad6d4bb3bb5c99557ac8c06a?v=c46ee3523e3c481a92231fe94cc00bd3 </td></tr>
 <tr><td align="center">LaTeX Thesis</td><td>https://www.overleaf.com/project/638883ef1f6f113398139581</td></tr>
 <tr><td align="center">Colab</td><td>https://colab.research.google.com/drive/1pKZtZ9_iotdf0YHwzCta6M2bcLMQDrCG</td></tr>
+<tr><td align="center">Final Presentation</td><td></td></tr>
 </tbody>
 </table>
+
+
+
 
 <!-- AUTHORS -->
 ## Authors
