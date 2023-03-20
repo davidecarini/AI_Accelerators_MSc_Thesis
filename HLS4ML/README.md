@@ -1,4 +1,4 @@
-# DEPLOY OF CNN ON ALVEO U280
+# DEPLOY OF A SIMPLE CNN ON ALVEO U280
 
 Here is presented an example of FPGA neural network inference deployed on alveo u280 board with Vivado 2020.1. The Dataset used for classification is the MNIST dataset. The NN used is a simple CNN: 
 ```
@@ -25,16 +25,15 @@ Non-trainable params: 0
 ```
 
 ## Software Requirements
-Vivado and Vitis 2020.1 <br />
-Platform files for your board (2020.1 or older) <br />
-XRT (2020.1 or newer) <br />
-Python 3.7
+* Vivado and Vitis 2020.1 
+* Platform files for your board (2020.1 or older)
+* XRT (2020.1 or newer) 
+* Python 3.7
 
 ## Run the Virtual Environment
 All the libraries and the source of the SWs are in the virtual environment.
 ```
 [carini@localhost test]$  ./script.sh
-
 
 Epoch 1/15
 422/422 [==============================] - 3s 7ms/step - loss: 0.4896 - accuracy: 0.8674 - val_loss: 0.2208 - val_accuracy: 0.9388
@@ -72,8 +71,44 @@ Size of the Keras model: 0.233736 MB
 313/313 [==============================] - 1s 2ms/step
 Keras test Accuracy: 0.9805
 
+........
+
 ```
 
+
+
+## hls4ml Configuration
+In this tool two fundamental parameters are the reuse factor and the precision used for the operations. 
+```
+config = hls4ml.utils.config_from_keras_model(model, granularity='name')
+    config['Model'] = {}
+    config['Model']['ReuseFactor'] = 1
+    config['Model']['Strategy'] = 'Resource'
+    config['Model']['Precision'] = 'ap_fixed<16,6>'
+    
+    config['LayerName']['layer0']['Precision'] = 'ap_ufixed<8,3>'
+
+    config['LayerName']['dense_layer']['ReuseFactor'] = 13
+    config['LayerName']['softmax']['Strategy']    = 'Stable'
+
+    for layer in config['LayerName'].keys():
+        config['LayerName'][layer]['Trace'] = True
+
+
+    cfg = hls4ml.converters.create_config(board='alveo-u280', clock_period= 5, part='xcu280-fsvh2892-2L-e', backend='VivadoAccelerator')
+    cfg['HLSConfig'] = config
+
+    cfg['AcceleratorConfig']['Driver']    = 'python'
+    cfg['AcceleratorConfig']['Board']     = 'alveo-u280'
+    cfg['AcceleratorConfig']['Interface'] = 'axi_stream'
+    cfg['AcceleratorConfig']['Precision']['Input']  = 'float'
+    cfg['AcceleratorConfig']['Precision']['Output'] = 'float'
+    cfg['IOType']= 'io_stream'
+    cfg['KerasModel'] = model
+    cfg['OutputDir'] = PROJECT_PATH + 'my_simpel_CNN_test/hls4ml_prj'
+
+
+```
 
 ## General results
 
