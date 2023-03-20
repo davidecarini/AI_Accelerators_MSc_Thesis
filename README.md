@@ -12,6 +12,19 @@ In this repository there is the material used in the master thesis and stored on
 With hls4ml, the xclbin is generated each time starting from the model that is given to it as input. Usually the generation of this bitstream takes about 3 hours. While in Vitis-AI an already existing bitstream is used and the model is compiled as if it were micro-code.
 
 
+
+
+<!-- COMPARISON -->
+## Comparison between CNN on HLS4ML and Vitis-AI
+
+|TOOL              |Total images [Images] |Accuracy [\%]|Throughput[Images\s]|t<sub>img</sub>[&#956;s]|
+|------------------|----------------------|-------------|--------------|------------------------|
+|HLS4ML          | 10000     |97.66        |60519.5         |          251.92            |
+|Vitis-AI        | 10000      |  98.07     |3969.52         |          16.5            |
+
+
+
+
 <!-- LINKS -->
 ## Links
 <table style="margin-left: auto; margin-right: auto">
@@ -40,19 +53,15 @@ With hls4ml, the xclbin is generated each time starting from the model that is g
 </tbody>
 </table>
 
-## Comparison between CNN on HLS4ML and Vitis-AI
-
-|TOOL              |Total images [Images] |Accuracy [\%]|Throughput[Images\s]|t<sub>img</sub>[&#956;s]|
-|------------------|----------------------|-------------|--------------|------------------------|
-|HLS4ML          | 10000     |97.66        |60519.5         |          251.92            |
-|Vitis-AI        | 10000      |  98.07     |3969.52         |          16.5            |
 
 
 ## Acknowledgments
-
+For the development of this thesis I relied on these very useful repositories: 
 * https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb  
 * https://github.com/selwyn96/hls4ml
 * https://github.com/lobster1989/Mnist-classification-Vitis-AI-1.3-TensorFlow2
+
+
 
 ## Contribute
 Contributions are always welcome!
