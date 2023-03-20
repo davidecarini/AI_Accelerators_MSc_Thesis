@@ -196,8 +196,6 @@ Evaluate model on test Dataset..
 loss: 0.064
 acc: 0.981
 
-
-
 ```
 
 ### Compile into DPU model file
