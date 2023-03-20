@@ -33,6 +33,8 @@ In this repository there is all the material used in the master thesis and store
 </tbody>
 </table>
 
+## Comparison between CNN on HLS4ML and Vitis-ai
+
 ## Acknowledgments
 https://github.com/selwyn96/Alveo-tutorial/blob/main/training/MNIST_Test/MNIST_train.ipynb  
 
