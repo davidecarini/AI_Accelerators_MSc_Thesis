@@ -1,39 +1,29 @@
 #!/bin/bash
 
-# Copyright 2020 Xilinx Inc.
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-#     http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
-# Author: Mark Harvey
+# Author: Davide Carini
 
 ARCH=/opt/vitis_ai/compiler/arch/DPUCAHX8H/U280/arch.json
+OUTDIR=./compiled_model/U280
+NET_NAME=customcnn
+MODEL=./models/quantized_model.h5
+
 
 compile() {
-  vai_c_tensorflow \
-    --frozen_pb  ${QUANT}/quantize_eval_model.pb \
-    --arch       ${ARCH} \
-    --output_dir ${COMPILE_U280} \
-    --net_name   ${NET_NAME}
+  vai_c_tensorflow2 \
+    --model      $MODEL\
+    --arch       $ARCH \
+    --output_dir $OUTDIR \
+    --net_name   $NET_NAME
 }
 
 echo "-----------------------------------------"
 echo "COMPILE U280 STARTED.."
 echo "-----------------------------------------"
 
-rm -rf ${COMPILE_U280}
-mkdir -p ${COMPILE_U280}
-compile 2>&1 | tee ${LOG}/${COMP_LOG_U280}
+compile 2>&1 | tee compile.log
 
 echo "-----------------------------------------"
 echo "COMPILE U280 COMPLETED"
 echo "-----------------------------------------"
+~                                                        
