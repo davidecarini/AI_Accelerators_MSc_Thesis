@@ -26,10 +26,10 @@ In this repository there is all the material used in the master thesis and store
 ## Authors
 <table style="margin-left: auto; margin-right: auto">
 <thead>
-<tr><th>NAME</th><th>EMAIL</th><th>PERSON CODE</th></tr>
+<tr><th>NAME</th><th>EMAIL</th><th>PERSON CODE</th><th>STUDENT ID</th></tr>
 </thead>
 <tbody>
-<tr><td><a href="https://github.com/davidecarini">Davide Carini<a/></td><td align="center">davide.carini@mail.polimi.it</td><td>10568649</td></tr>
+<tr><td><a href="https://github.com/davidecarini">Davide Carini<a/></td><td align="center">davide.carini@mail.polimi.it</td><td>10568649</td><td>976571</td></tr>
 </tbody>
 </table>
 
