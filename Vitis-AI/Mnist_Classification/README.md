@@ -47,6 +47,13 @@ Copies the .xmodel and images to the ./target_u280 folder ready to be copied to 
 Before running this part, we should setup Vitis-AI docker and activate vitis-ai-tensorflow2 anaconda environment.
 For more details, refer to the latest version of the Vitis AI User Guide (UG1414). 
 
+### Set the environment
+```
+Vitis-AI /workspace/test/src > source setenv.sh
+
+```
+
+
 ### Build and train model
 
 ```
