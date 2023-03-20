@@ -17,8 +17,25 @@ With hls4ml, the xclbin is generated each time starting from the model that is g
 ## Neural Network
 The neural network used in the thesis has the following structure: 
 
-<img src="https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/blob/main/images/Keras_model.png" alt="CNN model" style="float: left; margin-right: 100px;" />
-
+Create custom cnn..
+Model: "mnist_customcnn_model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 28, 28, 1)]       0         
+_________________________________________________________________
+conv2d (Conv2D)              (None, 26, 26, 12)        120       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 13, 13, 12)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 2028)              0         
+_________________________________________________________________
+dense (Dense)                (None, 10)                20290     
+=================================================================
+Total params: 20,410
+Trainable params: 20,410
+Non-trainable params: 0
+_________________________________________________________________
 
 
 <!-- COMPARISON -->
