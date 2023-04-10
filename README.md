@@ -66,6 +66,7 @@ Keras test Accuracy: 98,05 %
 <tr><td align="center">Excel Results</td><td>https://polimi365-my.sharepoint.com/:x:/g/personal/10568649_polimi_it/EZllLAMKUdZNiNXf4vR5Xv0BHTXIieT37QZPnv-lPMbPyw?e=JiFfKv&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0</td></tr>
 <tr><td align="center">Meeting Notes</td><td> https://www.notion.so/030e0768ad6d4bb3bb5c99557ac8c06a?v=c46ee3523e3c481a92231fe94cc00bd3 </td></tr>
 <tr><td align="center">LaTeX Thesis</td><td>https://www.overleaf.com/project/638883ef1f6f113398139581</td></tr>
+<tr><td align="center">LaTeX Executive Summary</td><td>https://www.overleaf.com/project/6388ce2146149184b3edeaf9</td></tr>
 <tr><td align="center">Colab</td><td>https://colab.research.google.com/drive/1pKZtZ9_iotdf0YHwzCta6M2bcLMQDrCG</td></tr>
 <tr><td align="center">Final Presentation</td><td>https://github.com/davidecarini/AI_Accelerators_MSc_Thesis/blob/main/deliveries/TemplatePoliMi.pptx</td></tr>
 </tbody>
